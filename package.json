@@ -1,0 +1,15 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "description": "saves userid and email",
+  "main": "1.1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
