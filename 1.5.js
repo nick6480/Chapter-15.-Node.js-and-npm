@@ -39,7 +39,7 @@ function enterName() {
   //console.log(users)
   name = readline.question("Enter name:");
   if (!checkValue.checkIfValue(name)) {
-    console.log("Please enter a name";
+    console.log("Please enter a name");
     enterName();
   }
   if (checkAvailability(name) == true) {
