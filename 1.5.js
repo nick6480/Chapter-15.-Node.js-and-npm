@@ -9,8 +9,6 @@ let name;
 let email;
 let users = [];
 let emailBool = false;
-let found;
-let foundI;
 
 
 
@@ -18,6 +16,8 @@ let data = fs.readFileSync("data.json", "utf8");
 if (data.length > 0) {
   users = JSON.parse(data);
 }
+
+
 
 
 function createDetails() {
@@ -34,11 +34,12 @@ function createDetails() {
 }
 
 
+
 function enterName() {
   //console.log(users)
   name = readline.question("Enter name:");
   if (!checkValue.checkIfValue(name)) {
-    console.log("Please enter a name");
+    console.log("Please enter a name";
     enterName();
   }
   if (checkAvailability(name) == true) {
@@ -56,7 +57,6 @@ function enterEmail() {
   }
 }
 
-
 function newEnterEmail() {
 
   changeEmail = readline.question("Do you wish to change the email [Y/N]");
@@ -72,6 +72,9 @@ function newEnterEmail() {
   }
 }
 
+
+let found;
+let foundI;
 
 function checkAvailability(userid) {
   for (var i = 0; i < users.length; i++) {
@@ -91,7 +94,10 @@ function checkAvailability(userid) {
 createDetails()
 
 
+
+
 let jsonString = JSON.stringify(users)
+
 fs.writeFile(filename, jsonString, (err) => {
     if (err) {
         throw err;

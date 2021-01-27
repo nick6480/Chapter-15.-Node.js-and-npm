@@ -1,5 +1,5 @@
 {
-  "name": "users",
+  "name": "user",
   "version": "1.0.0",
   "description": "saves userid and email",
   "main": "1.1.js",
